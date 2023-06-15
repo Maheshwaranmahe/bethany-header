@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.bg{
+    position: fixed;
+    height: 85%;
+    width: 100%;
+}
+.bg img{
+    height: 100%;
+    width: 100%;
+}
+header{
+    background-color: #fff;
+    position: sticky;
+    height: 60px;
+    width: 80%;
+    top: 20px;
+    left: 10%;
+}
+.logo{
+    background-color: #009970;
+    color: #fff;
+    height: auto;
+    width: 150px;
+    text-align: center;
+    padding: 17px 0 17px 0;
+}
+.toggle,.toggle1, [id^=drop] {
+    display: none;
+}
+nav ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 28%;
+    top: -60px;
+    text-transform: uppercase;
+}
+nav ul li {
+    display: inline-block;
+}
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: #36343a;
+    font-size: 15px;
+    line-height: 40px;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 170px;
+    top: 80%;
+    left: 37%;
+}
+nav ul ul ul{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    left: -150px;
+    top: -1px;
+    width: 150px;
+}
+nav ul li:hover>ul { 
+    display: inherit; 
+}
+nav .btn:hover{
+    color: #fff;
+    background: #00b383;
+}
+nav ul ul li {
+    width: auto;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li {
+    position: relative;
+}
+.btn{
+    background: #009970;
+    padding: 0px 25px;
+    margin-top: 8px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+
+
+@media only screen and (min-width:150px) and (max-width:767px) {
+    header{
+        position: relative;
+        width: 100%;
+        background-color: #009970;
+        top: 0;
+        left: 0;
+}    
+nav { 
+    margin: 0;
+    position: absolute;
+    width: 90%;
+}
+.btn{
+    width: 60%;
+}
+.logo{
+    position: absolute;
+}
+nav ul{
+    background-color: #fff;
+    top: 50px;
+    left: 15px;
+}
+.toggle ~ a,.toggle1 ~ a,
+ .menu { 
+    display: none; 
+}
+.toggle1 {
+    position: absolute;
+    left: 350px;
+    display: block;
+    padding: 0 20px;
+    color: white;
+    font-size: 22px;
+    line-height: 60px;
+}
+.toggle{
+    display: block;
+    padding: 0 20px;
+    line-height: 60px; 
+}
+[id^=drop]:checked ~ ul { 
+    display: block; 
+}
+nav ul li {
+    display: block;
+}
+nav ul ul .toggle,
+ nav ul ul a { 
+    padding: 0 40px; 
+}
+nav ul ul ul a { 
+    padding: 0 80px; 
+}
+nav ul ul {
+    float: none;
+    position: relative;
+    width: 90%;
+    left: 0;
+}
+nav ul ul ul{
+    position: relative;
+    width: 90%;
+    left: 5%;
+}
+.btn{
+    width: 80%;
+    text-align: center;
+    margin-left: 5%;
+}
+nav ul li:hover > ul { 
+    display: none; 
+}
+nav ul ul li {
+    display: block;
+    width: 100%;
+    margin-top: 2%;
+}
+}
