@@ -124,7 +124,7 @@ nav ul{
 }
 .toggle1 {
     position: absolute;
-    left: 350px;
+    right: 0;
     display: block;
     padding: 0 20px;
     color: white;
